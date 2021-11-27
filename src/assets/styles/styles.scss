@@ -1,0 +1,58 @@
+@import url("../fonts/Golos_Text_Bold/Golos_Text_Bold.css");
+@import url("../fonts/Golos_Text_Regular/Golos_Text_Regular.css");
+@import url("../fonts/Golos_Text_Medium/Golos_Text_Medium.css");
+@import url("../css/uicons-regular-rounded.css");
+
+
+
+$GolosBold: GolosTextWebBold;
+$GolosRegular: GolosTextWebRegular;
+$GolosMedium: GolosTextWebMedium;
+
+body,
+.v-application {
+    font-family: $GolosRegular !important;
+}
+
+h1 {
+
+    font-family: $GolosBold;
+    font-size: clamp(44px, 5vw, 72px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0em;
+}
+
+
+h5 {
+    font-family: $GolosRegular;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #04153E;
+}
+
+h6 {
+    font-family: $GolosRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #04153E;
+}
+
+p {
+    font-family: $GolosRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #04153E;
+    opacity: 0.72;
+}
