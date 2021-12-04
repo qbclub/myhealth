@@ -1,13 +1,6 @@
 <template>
-  <v-app>
-    <header class="d-flex flex-column">
-      <div>
-        <span class="fi-rr-angle-left"></span>
-      </div>
-      <div class="header_text">
-        <h5>Главная</h5>
-      </div>
-    </header>
+  <v-app class="home" >
+   
     <v-main> <router-view></router-view> </v-main>
 
     <v-footer padless color="white">
@@ -39,25 +32,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-header {
-   position: sticky;
-  top: 0;
-  left: 0;
-  background: white;
-  z-index: 3;
-  div {
-    height: 52px;
-    display: flex;
-    align-items: center;
-    padding-left: 8px;
 
-    span {
-      font-size: 20px;
-    }
-  }
-  .header_text {
-    padding-left: 24px;
-  }
+.home{
+  overflow: hidden;
 }
 
 .v-footer {

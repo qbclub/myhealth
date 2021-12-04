@@ -1,20 +1,48 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import StartPage from '../components/StartPage.vue'
 import Home from '../views/Home.vue'
 
 
 Vue.use(VueRouter)
 
 const routes = [{
-    path: '/',
-   
+    path: '',
     component: Home,
     children: [{
-      path: '',
-      name: 'StartPage',
-      component: StartPage,
-    }]
+        path: '/',
+        name: 'StartPage',
+        component: () => import('../components/StartPage.vue')
+      },
+      {
+
+        path: '/discovery',
+        name: 'Discovery',
+        component: () => import('../components/Discovery.vue'),
+
+      },
+      {
+
+        path: '/stat/:name',
+        name: 'MonitoringStat',
+        component: () => import('../components/MonitoringStat.vue'),
+        props: true 
+
+      },
+      {
+
+        path: '/chart',
+        name: 'LineChart',
+        component: () => import('../components/LineChart.vue'),
+
+      },
+      {
+
+        path: '/monitoring',
+        name: 'Monitoring',
+        component: () => import('../components/Monitoring.vue'),
+
+      }
+    ]
   },
   {
     path: '/hello',

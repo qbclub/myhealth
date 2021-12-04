@@ -2,7 +2,7 @@
   <div class="hello">
     <h1 class="">
       дневник <br />
-      моего здоровья
+      моего <br />здоровья
     </h1>
   </div>
 </template>
@@ -46,7 +46,6 @@ export default {
   }
   100% {
     transform: scale(0);
-   
   }
 }
 </style>

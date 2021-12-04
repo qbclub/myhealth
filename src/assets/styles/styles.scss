@@ -8,10 +8,12 @@
 $GolosBold: GolosTextWebBold;
 $GolosRegular: GolosTextWebRegular;
 $GolosMedium: GolosTextWebMedium;
+$MainColor:#3D75E4;
 
 body,
 .v-application {
     font-family: $GolosRegular !important;
+
 }
 
 h1 {
@@ -55,4 +57,74 @@ p {
     line-height: 20px;
     color: #04153E;
     opacity: 0.72;
+}
+
+.v-application a {
+    text-decoration: none;
+    color: #04153E !important;
+}
+
+
+.main_button {
+
+    box-shadow: none;
+    transition: box-shadow 0.5s ease-in-out;
+
+    &:hover {
+        box-shadow: (0px 4px 16px rgba(4, 21, 62, 0.16));
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 3;
+
+    div {
+        height: 52px;
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .header_text {
+        padding-left: 24px;
+    }
+}
+
+.action_button {
+    background: $MainColor;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 272px;
+
+    
+    color: white;
+    font-family: $GolosRegular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+input {
+    // background: #cdd2db;
+    border-radius: 8px;
+    height: 40px;
+    width: 272px;
+   
+    color: #04153E;
+    border: 0.5px solid black;
+    text-align: center;
+
+
 }
