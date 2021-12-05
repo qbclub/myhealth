@@ -44,7 +44,7 @@ export default {
           text: "сохраняй анализы и исследования",
           background:
             " background:linear-gradient(34.29deg, #E3F3D8 0%, #F6FCF3 100%)",
-          path: "/",
+          path: "/discovery",
         },
         {
           header: "Врачи",

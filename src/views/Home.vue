@@ -3,8 +3,8 @@
    
     <v-main> <router-view></router-view> </v-main>
 
-    <v-footer padless color="white">
-      <v-col class="text-center d-flex justify-space-around">
+    <v-footer padless color="white" app class="justify-center">
+      <v-col class="text-center col-12 col-sm-6 d-flex justify-space-around">
         <div class="d-flex flex-column">
           <span class="fi fi-rr-home"></span>
           <span class="icon_text">Главная</span>
@@ -33,15 +33,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-.home{
-  overflow: hidden;
-}
+
 
 .v-footer {
-  bottom: 0;
-  left: 0;
+  // bottom: 0;
+  // left: 0;
   height: 56px;
-  position: sticky;
+  // position: sticky;
   filter: drop-shadow(0px 4px 16px rgba(4, 21, 62, 0.16));
   .fi {
     font-size: 20px;

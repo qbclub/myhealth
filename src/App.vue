@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import router from "./router/index";
+// import router from "./router/index";
 export default {
   name: "App",
 
@@ -19,7 +19,7 @@ export default {
     //
   }),
   mounted() {
-   router.push({ path: "/hello" });
+  //  router.push({ path: "/hello" });
   },
 };
 </script>
@@ -28,6 +28,7 @@ export default {
 .container{
   padding: 0;
   overflow: hidden;
+
   
 }
 </style>
