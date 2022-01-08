@@ -51,7 +51,7 @@ export default {
           text: "расписание, контакты",
           background:
             " background:linear-gradient(34.29deg, #FBECDD 0%, #FEFAF6 100%)",
-          path: "/",
+          path: "/doctors",
         },
    
       ],
